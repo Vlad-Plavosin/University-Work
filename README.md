@@ -3,7 +3,7 @@
 ### Acesta este repozitoriul tuturor proiectelor făcute la universitate de Vlad Plavoșin, sectiunea Informatică Engleză. Toate proiectele pot fi folosite la discreție.
 ### Isto é o repositório de todos os projetos feitos à universidade por Vlad Plavosin, seção Ciência de Computação em Inglês. Todos os projeitos podem ser usados à discrição.
 
-**Year 1**:point_up_2:	
+**Year 1**:point_up_2:
 - Semester 1 (Babes-Bolyai University)
   - :snake:Fundamentals of Programming
   - :floppy_disk:Computer Systems Architecture
@@ -11,10 +11,10 @@
   - :poop:Object Oriented Programming
   - :link:Data Structures and Algorithms
   - :arrow_forward:Operating Systems
-  - :world_map:Graph Algorithms
+  - :world_map:Graph Algorithms  
 **Year 2**:v:
 - Semester 1 (University of Porto)
-  - Logic and Functional Programming
+  - :test_tube:Logic and Functional Programming
   - :construction_worker_man:Design and Testing Laboratory
   - :bar_chart:Statistics
   - :abacus:Databases
