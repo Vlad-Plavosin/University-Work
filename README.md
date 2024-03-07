@@ -5,24 +5,24 @@
 
 **Year 1**:point_up_2:	
 - Semester 1 (Babes-Bolyai University)
-  - Fundamentals of Programming
-  - Computer Systems Architecture
+  - :snake:Fundamentals of Programming
+  - :floppy_disk:Computer Systems Architecture
 - Semester 2 (Babes-Bolyai University)
-  - Object Oriented Programming
-  - Data Structures and Algorithms
-  - Operating Systems
-  - Graph Algorithms
+  - :poop:Object Oriented Programming
+  - :link:Data Structures and Algorithms
+  - :arrow_forward:Operating Systems
+  - :world_map:Graph Algorithms
 **Year 2**:v:
 - Semester 1 (University of Porto)
   - Logic and Functional Programming
-  - Design and Testing Laboratory
-  - Statistics
-  - Databases
-  - Computer Networks<br>
+  - :construction_worker_man:Design and Testing Laboratory
+  - :bar_chart:Statistics
+  - :abacus:Databases
+  - :electric_plug:Computer Networks  
 - Semester 2 (Babes-Bolyai University)
-  - Web Programming
-  - Database Management Systems
-  - Software Engineering
-  - Systems for Design and Implementation
-  - Artificial Inteligence<br>
+  - :earth_africa:Web Programming
+  - :factory:Database Management Systems
+  - :computer:Software Engineering
+  - :gear:Systems for Design and Implementation
+  - :robot:Artificial Inteligence  
 **Year 3**:love_you_gesture:
