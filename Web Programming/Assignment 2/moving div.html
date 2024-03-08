@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class ="test" id="test" onclick="move()" style ="position:absolute;
+    background:blue;
+    width:200px;
+    height:200px;
+    top:40px;
+    transition:all 1s linear;
+    left: 0;" />
+</body>
+<script>
+    move = function() {
+    if($('#test').hasClass('moved')) {
+        $('#test').removeClass('moved');
+    }else{
+        $('#test').addClass('moved');
+    }
+}
+</script>
+</html>
