@@ -1,0 +1,12 @@
+.divToAnimate {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: background-color 3s ease, transform 3s ease;;
+    transform: translate(0, 0);
+  }
+  
+  .divToAnimate:hover {
+    background-color: red;
+    transform: translate(800%, 300%);
+  }
