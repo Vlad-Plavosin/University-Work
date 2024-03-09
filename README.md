@@ -12,11 +12,12 @@
   - :link:[Data Structures and Algorithms](/Data%20Structures%20and%20Algorithms/)
   - :arrow_forward:Operating Systems
   - :world_map:Graph Algorithms  
+
 **Year 2**:v:
 - Semester 1 (University of Porto)
   - :test_tube:[Logic and Functional Programming](/Functional%20&%20Logic%20Programming/)
   - :construction_worker_man:[Design and Testing Laboratory](/Software%20Design%20and%20Testing%20Laboratory/)
-  - :bar_chart:Statistics
+  - :bar_chart:[Statistics](/Statistics/)
   - :abacus:[Databases](/Databases/)
   - :electric_plug:Computer Networks  
 - Semester 2 (Babes-Bolyai University)
@@ -24,5 +25,6 @@
   - :factory:Database Management Systems
   - :computer:Software Engineering
   - :gear:Systems for Design and Implementation
-  - :robot:Artificial Inteligence  
+  - :robot:[Artificial Inteligence](/Artificial%20Inteligence/)  
+  
 **Year 3**:love_you_gesture:
