@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "state_machine.h": "c",
+        "link_layer.h": "c",
+        "application_layer.h": "c",
+        "typeinfo": "c",
+        "globals.h": "c",
+        "stdio.h": "c",
+        "stat.h": "c",
+        "types.h": "c",
+        "transmitter.h": "c"
+    }
+}
