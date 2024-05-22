@@ -2,8 +2,10 @@ package com.javatechie.crud.example.service;
 
 import com.github.javafaker.Faker;
 import com.javatechie.crud.example.entity.Product;
+import com.javatechie.crud.example.entity.User;
 import com.javatechie.crud.example.repository.ProductRepoMemo;
 import com.javatechie.crud.example.repository.ProductRepository;
+import com.javatechie.crud.example.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -15,6 +17,8 @@ import java.util.List;
 public class ProductService {
     @Autowired
     private ProductRepository repository;
+    @Autowired
+    private UserRepository userRepository;
     private final SimpMessagingTemplate messagingTemplate;
 
     private ProductRepoMemo fakeRepo = new ProductRepoMemo();
@@ -24,12 +28,12 @@ public class ProductService {
         this.messagingTemplate = messagingTemplate;
     }
 
-    @Scheduled(fixedRate = 8000)
-    public void timedAddAndPing(){
-        Product newProduct = new Product("round", faker.company().name(),faker.color().name(),faker.number().numberBetween(1,100),faker.number().numberBetween(1,100));
-        repository.save(newProduct);
-        messagingTemplate.convertAndSend("/topic/newPerson", newProduct);
-    }
+//    @Scheduled(fixedRate = 8000)
+//    public void timedAddAndPing(){
+//        Product newProduct = new Product("round", faker.company().name(),faker.color().name(),faker.number().numberBetween(1,100),faker.number().numberBetween(1,100),157051);
+//        repository.save(newProduct);
+//        messagingTemplate.convertAndSend("/topic/newPerson", newProduct);
+//    }
 
 
     public Product saveProduct(Product product) {
@@ -63,6 +67,13 @@ public class ProductService {
     public List<Product> getProducts() {
         //return fakeRepo.products;
         return repository.findAll();
+    }
+    public List<User> getUsers() {
+        //return fakeRepo.products;
+        return userRepository.findAll();
+    }
+    public User adduser(User user){
+        return userRepository.save(user);
     }
 
     public Product getProductById(int id) {

@@ -1,6 +1,7 @@
 package com.javatechie.crud.example.controller;
 
 import com.javatechie.crud.example.entity.Product;
+import com.javatechie.crud.example.entity.User;
 import com.javatechie.crud.example.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -26,6 +27,11 @@ public class ProductController {
     public Product addProduct(@RequestBody Product product) {
         return service.saveProduct(product);
     }
+    @PostMapping("/adduser")
+    @CrossOrigin
+    public User adduser(@RequestBody User user) {
+        return service.adduser(user);
+    }
 
     @PostMapping("/addProducts")
     @CrossOrigin
@@ -37,6 +43,11 @@ public class ProductController {
     @CrossOrigin
     public List<Product> findAllProducts() {
         return service.getProducts();
+    }
+    @GetMapping("/users")
+    @CrossOrigin
+    public List<User> findAllUsers() {
+        return service.getUsers();
     }
 
     @GetMapping("/productById/{id}")
