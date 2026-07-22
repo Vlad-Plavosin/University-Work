@@ -1,0 +1,9 @@
+int main(){
+n : input()|
+sum : 0|
+for(i,n){
+sum: input() + sum|
+}
+print(sum)|
+return|
+}

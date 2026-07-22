@@ -1,0 +1,12 @@
+The format of the input file is as follows:
+First 'Q=' followed by all possible states separated by a space
+Then 'E=' followed by the alphabet separated similarly
+Next 'q0=X' where X must be a state present in Q
+Then 'F=Y' where Y is the final state and must also be present in Q
+Finally a separate line with 'S=' followed by lines representing transitions, each formatted as follows:
+'M,0->N' where M and N must be states and '0' must be a part of the alphabet
+
+def validate(Q, E, q0, F, S): checks if the finite automata read are valid and returns true if yes
+def readFromFile(file_name): reads the finite automata using the specified format
+def is_dfa(self): by checking the transitions it returns whether the fa are definite
+def is_accepted(self, seq): checks whether the input is a valid sequence or not

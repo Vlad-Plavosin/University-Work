@@ -1,0 +1,21 @@
+class Node
+__init__(self, value): Creates a new node with the given value. Initializes left and right child pointers (l, r) to None and sets a counter (count) to 1.
+bst.py
+__init__(self): Initializes an empty binary search tree with no root.
+
+insert(self, value): Inserts a value into the BST by using insert_rec.
+
+insert_rec(self, root, value): Recursively inserts a value into the tree, increasing it's count if the value is already inside the tree.
+
+inorder_traversal_print(self): Prints the tree nodes by using the inorder_recursive_print_.
+
+inorder_recursive_print_(self, root): Does an inorder traversal, printing the node’s value and count.
+
+st.py
+is_keyword(self, token): Checks if token is a keyword from the list.
+
+split_and_classify(self, text, dictionary): Splits the text into lines then decides what category each token fits into. They can be keywords, variables, or operators.
+
+def get_st(self,text,dict): Creates the bst, then uses the previous functions to split the tokens. After it categorizes them.
+
+

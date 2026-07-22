@@ -1,0 +1,11 @@
+int main(){
+nr : input()|
+for(i,nr/02){
+if(nr%i == 0){
+print("not prime")|
+return|
+}
+}
+print("not prime")|
+return|
+}

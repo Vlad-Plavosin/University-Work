@@ -1,0 +1,27 @@
+Variables/Keywords:
+int - keyword: 1
+main - keyword: 1
+nr - variable: 3
+input - keyword: 1
+for - keyword: 1
+i - variable: 2
+02 - variable: 1
+if - keyword: 1
+0 - variable: 1
+print - keyword: 2
+not - variable: 2
+prime - variable: 2
+return - keyword: 2
+
+Operators:
+" : 4
+% : 1
+( : 6
+) : 6
+, : 1
+/ : 1
+: : 1
+== : 1
+{ : 3
+| : 5
+} : 3

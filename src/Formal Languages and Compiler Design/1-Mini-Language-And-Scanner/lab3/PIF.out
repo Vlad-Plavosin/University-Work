@@ -1,0 +1,52 @@
+int
+main
+( - tree_index: 0
+) - tree_index: 1
+{ - tree_index: 3
+nr
+: - tree_index: 5
+input
+( - tree_index: 0
+) - tree_index: 1
+| - tree_index: 4
+for
+( - tree_index: 0
+i
+, - tree_index: 12
+nr
+/ - tree_index: 6
+02
+) - tree_index: 1
+{ - tree_index: 3
+if
+( - tree_index: 0
+nr
+% - tree_index: 8
+i
+== - tree_index: 7
+0
+) - tree_index: 1
+{ - tree_index: 3
+print
+( - tree_index: 0
+" - tree_index: 11
+not
+prime
+" - tree_index: 11
+) - tree_index: 1
+| - tree_index: 4
+return
+| - tree_index: 4
+} - tree_index: 2
+} - tree_index: 2
+print
+( - tree_index: 0
+" - tree_index: 11
+not
+prime
+" - tree_index: 11
+) - tree_index: 1
+| - tree_index: 4
+return
+| - tree_index: 4
+} - tree_index: 2

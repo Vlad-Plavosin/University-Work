@@ -1,0 +1,15 @@
+Class Grammar:
+
+def read_grammar(self, filename): Takes the text from a file and extracts the terminals, nonterminals and productions from it if it respects the format.
+def print_nonterminals(self),def print_terminals(self),def print_productions(self),def get_productions_for(self, nonterminal): functions to print the terminals,nonterminals,all productions and productions of a terminal from what was read in the previous function
+def is_cfg(self): checks if the grammar is a cfg and returns true or false
+
+class LL1Parser:
+def compute_first(self): goes through all the nonterminals and updates the list first[] with all the adequate terminals
+def compute_follow(self): similarly populates the follow list, using both the grammar and the compute_first function to gather all possible follow symbols.
+def print_first_follow(self): helper function to print to the screen both sets obtained in the previous 2 functions
+def parse(self, input_string): takes an input and goes through it symbol by symbol. It categorizes all terminals and expands all nonterminals until it can conclude that the input either respects the grammar provided or does not
+def construct_parsing_table(self): going through all the productions in the grammar and using the first and follow lists, the function creates the parsing table representation, also checking for any conflicts along the way.
+def _compute_production_first(self, production): helper function to compute all possible first symbols resulting form a production.
+def _report_conflicts(self): function to print conflicts to screen if there are any
+def pretty_print_parsing_table(self, file_path): prints a more nicely formatted version of the parsing table to the screen as well as to the provided file_path

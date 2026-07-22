@@ -1,0 +1,13 @@
+Program
+Program -> StmtList
+StmtList -> Stmt StmtList | e
+Stmt -> ForLoop | IfStmt | PrintStmt | ReturnStmt | VarDecl
+VarDecl -> id : input ( ) ;
+ForLoop -> for ( id : num ; Expr ; id : ArithmeticExpr ) { StmtList }
+IfStmt -> if ( Expr ) { StmtList }
+PrintStmt -> print ( string ) ;
+ReturnStmt -> return ;
+Expr -> ComparisonExpr
+ComparisonExpr -> ArithmeticExpr ComparisonOp ArithmeticExpr
+ArithmeticExpr -> id + num | id % id | id / id | id | num
+ComparisonOp -> =

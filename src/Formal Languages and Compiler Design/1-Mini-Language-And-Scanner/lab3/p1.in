@@ -1,0 +1,8 @@
+int main(){
+nr1 : input()|
+nr2 : input()|
+nr3 : input()|
+result : max(nr1,nr2,nr3)|
+print(result)|
+return|
+}

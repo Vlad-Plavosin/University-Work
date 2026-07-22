@@ -1,0 +1,14 @@
+Algorithms
+The Hamiltonian cycle detection algorithm employs a backtracking strategy to explore all possible paths in a directed graph. Starting from a fixed vertex, the algorithm recursively visits neighbors, keeping track of the path to avoid revisiting nodes. Once the path length equals the number of nodes, it checks if all nodes are visited and if the path connects back to the starting vertex, forming a valid cycle.
+
+Parallelization divides the search across threads, each exploring paths from different neighbors of the current vertex. This is implemented at several levels, enabling efficient traversal of large search spaces. Each thread independently handles its assigned portion of the graph, making the algorithm highly scalable.
+
+Synchronization Used in the Parallelized Variants
+Synchronization ensures safe interaction between threads and prevents redundant work:
+
+Cycle Found Flag: An AtomicBoolean shared among threads signals when a cycle is discovered. Threads terminate early if the flag is set.
+Critical Sections: Threads use synchronized blocks to safely update shared resources, such as the cycle result, without interference or overwriting.
+This design minimizes contention while allowing early termination, improving efficiency.
+
+Performance Measurements
+Performance is evaluated by comparing runtime across graph sizes and densities with different thread counts. Parallelization demonstrates significant speedups on larger graphs due to workload distribution. Dense graphs, with higher branching factors, benefit more from parallelization than sparse graphs. Thread overhead becomes noticeable for small or simple graphs, limiting gains in those cases.
